@@ -4,7 +4,7 @@
 <p align="left">This Password Generator is a user-friendly tool designed to create secure and customizable passwords based on user preferences. It offers a range of options to include various character sets in the password, ensuring both security and complexity as per the user's choice.  </p>
 
 
-
+<a href="password-generator-ten-olive.vercel.app">🔒Live</a>
 <h1>Features</h1>
 
 
@@ -31,7 +31,7 @@
 
 
 
-<h1>Responsive Design</h1>
+<h1>Responsive Design</h1> 
 
 <img src="https://github.com/MertSolgun/passwordGenerator/assets/115940928/9b957755-709f-4504-8823-97c26703554f" align="left" width="46%">  
 <img src="https://github.com/MertSolgun/passwordGenerator/assets/115940928/e7cfb654-43f9-4306-91b8-321097e1c127" align="right" width="46%" >
