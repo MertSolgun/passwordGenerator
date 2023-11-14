@@ -10,7 +10,7 @@
 body {
   background-color: #000;
   font-family: "JetBrains Mono", monospace;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .container {
