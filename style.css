@@ -185,9 +185,7 @@ input[type="checkbox"] {
   .checkBoxmain li {
     font-size: 0.8rem;
   }
-  .checkBoxmain {
-    margin: 11px auto;
-  }
+
   .level {
     display: flex;
     gap: 10px;
