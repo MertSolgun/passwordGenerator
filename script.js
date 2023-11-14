@@ -142,13 +142,3 @@ function updateValue() {
 document.getElementById("myRange").addEventListener("input", updateValue);
 
 const range = document.getElementById("myRange");
-
-range.addEventListener("input", () => {
-  if ("vibrate" in window.navigator) {
-    window.navigator.vibrate(50);
-  } else if ("tapticEngine" in window) {
-    window.tapticEngine.impact({
-      style: "medium",
-    });
-  }
-});

@@ -163,6 +163,7 @@ input[type="checkbox"] {
 @media (max-width: 400px) {
   .actionContainer {
     width: 95%;
+    margin: 30px auto;
   }
   .input {
     width: 95%;
