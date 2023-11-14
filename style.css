@@ -162,7 +162,7 @@ input[type="checkbox"] {
 
 @media (max-width: 400px) {
   .container {
-    margin: 30px auto;
+    margin: 70px auto;
   }
   .actionContainer {
     width: 95%;
@@ -189,6 +189,7 @@ input[type="checkbox"] {
   }
   .level h5 {
     font-size: 0.9rem;
+    padding-top: 10px;
   }
 }
 
