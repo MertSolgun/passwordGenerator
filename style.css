@@ -10,7 +10,7 @@
 body {
   background-color: #000;
   font-family: "JetBrains Mono", monospace;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .container {
@@ -162,10 +162,10 @@ input[type="checkbox"] {
 
 @media (max-width: 400px) {
   .actionContainer {
-    width: 100%;
+    width: 95%;
   }
   .input {
-    width: 100%;
+    width: 95%;
   }
   .input i {
     font-size: 1.3rem;
