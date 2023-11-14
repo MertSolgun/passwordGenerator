@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Password Generator</h1>
+
+      <section class="input">
+        <span class="randompass">P4$5W0rD!</span>
+        <i class="fa-solid fa-copy" style="display: none"></i>
+      </section>
+      <div class="actionContainer">
+        <section class="rangeMain">
+          <div class="tab">
+            <span class="characterLenght">Character Length</span>
+            <span id="rangeValue" class="lenght">1</span>
+          </div>
+          <input
+            type="range"
+            name="range"
+            id="myRange"
+            min="1"
+            max="25"
+            value="1"
+          />
+        </section>
+        <section class="checkBoxmain">
+          <ul>
+            <li>
+              <input type="checkbox" name="tick" id="upperCase" />
+              <label for="upperCase">Include Uppercase Letters</label>
+            </li>
+            <li>
+              <input type="checkbox" name="tick" id="lowerCase" />
+              <label for="upperCase">Include Lowercase Letters</label>
+            </li>
+            <li>
+              <input type="checkbox" name="tick" id="incNumbers" />
+              <label for="incNumbers">Include Numbers</label>
+            </li>
+            <li>
+              <input type="checkbox" name="tick" id="incSymbols" />
+              <label for="incSymbols">Include Symbols</label>
+            </li>
+          </ul>
+        </section>
+
+        <section class="level">
+          <div>
+            <h5>STRENGTH</h5>
+          </div>
+          <div class="levelInput">
+            <div>
+              <span id="passlevel">To weak</span>
+            </div>
+            <div>
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <button class="Generate">Generate</button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
