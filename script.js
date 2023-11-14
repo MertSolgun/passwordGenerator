@@ -74,7 +74,6 @@ generaBtn.addEventListener("click", () => {
     hasSymbols,
     length
   );
-  console.log(hasLower);
 });
 
 function generatePassword(lower, upper, number, symbols, length) {
