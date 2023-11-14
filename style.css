@@ -134,23 +134,27 @@ ul {
   border: none;
   border-radius: 5px;
 }
-#passlevel {
+
+.Generate #passlevel {
   padding-top: 9px;
+  color: #8ccb35;
 }
 
 input[type="checkbox"] {
   cursor: pointer;
-
   background-color: rgba(92, 136, 111, 0.221) !important;
   color: rgba(29, 58, 121, 0.363) !important;
 }
 
 @media (max-width: 600px) {
   .actionContainer {
-    width: 87%;
+    width: 100%;
   }
   .input span {
-    width: 352px;
+    width: 100%;
+  }
+  .input {
+    width: 100%;
   }
   .container {
     margin: 45px auto;
@@ -186,6 +190,7 @@ input[type="checkbox"] {
   }
   .level {
     display: flex;
+    gap: 10px;
   }
   .level h5 {
     font-size: 0.9rem;
@@ -286,7 +291,6 @@ input[type="range"]::-webkit-slider-runnable-track {
 
 input[type="range"]::-moz-range-track {
   width: 100%;
-
   height: 10px;
   border-radius: 5px;
 }

@@ -74,14 +74,15 @@ generaBtn.addEventListener("click", () => {
     hasSymbols,
     length
   );
+  console.log(hasLower);
 });
 
 function generatePassword(lower, upper, number, symbols, length) {
   let generatePass = "";
 
-  const typesCount = lower + upper + number + symbols;
+  const typesCount = lower + upper + number + symbols; // checked durumundan donen sonucu aldim
   const typesArr = [{ lower }, { upper }, { number }, { symbols }].filter(
-    (type) => Object.values(type)[0]
+    (type) => Object.values(type)[0] //secili olanlari aldim
   );
 
   if (typesCount === 0) {
@@ -115,18 +116,21 @@ function updateValue() {
   const li2 = document.querySelector(".levelInput ul li:nth-child(2)");
   const li3 = document.querySelector(".levelInput ul li:nth-child(3)");
   const li4 = document.querySelector(".levelInput ul li:nth-child(4)");
-  console.log(li4);
 
   if (value < 5) {
     li1.style.backgroundColor = "#8ccb35";
     li2.style.backgroundColor = "";
     li3.style.backgroundColor = "";
     li4.style.backgroundColor = "";
+    passLevel.textContent = "Too Weak";
+    passLevel.style.color = "#8ccb35";
   } else if (value >= 5 && value < 15) {
     li1.style.backgroundColor = "#e1a91a";
     li2.style.backgroundColor = "#e1a91a";
     li3.style.backgroundColor = "";
     li4.style.backgroundColor = "";
+    passLevel.textContent = "MEDIUM";
+    passLevel.style.color = "#e1a91a";
   } else if (value > 16) {
     li1.style.backgroundColor = "red";
     li2.style.backgroundColor = "red";
@@ -136,9 +140,20 @@ function updateValue() {
     li1.style.backgroundColor = "red";
     li2.style.backgroundColor = "red";
     li3.style.backgroundColor = "red";
+    passLevel.textContent = "Difficult";
+    passLevel.style.color = "red";
   }
 }
 
 document.getElementById("myRange").addEventListener("input", updateValue);
 
 const range = document.getElementById("myRange");
+
+const updateRange = () => {
+  myRange.addEventListener("input", () => {
+    updateValue();
+    generaBtn.click();
+  });
+};
+
+updateRange();
