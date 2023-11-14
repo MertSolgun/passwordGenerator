@@ -161,6 +161,12 @@ input[type="checkbox"] {
 }
 
 @media (max-width: 400px) {
+  .actionContainer {
+    width: 100%;
+  }
+  .input {
+    width: 100%;
+  }
   .input i {
     font-size: 1.3rem;
     top: 30px;
@@ -168,9 +174,7 @@ input[type="checkbox"] {
   .randompass {
     font-size: 1rem;
   }
-  .input span {
-    width: 259px;
-  }
+
   .checkBoxmain li {
     font-size: 0.8rem;
   }
@@ -179,7 +183,6 @@ input[type="checkbox"] {
   }
   .level {
     display: flex;
-    flex-direction: column;
   }
   .level h5 {
     font-size: 0.9rem;
