@@ -140,3 +140,11 @@ function updateValue() {
 }
 
 document.getElementById("myRange").addEventListener("input", updateValue);
+
+const range = document.getElementById("myRange");
+
+range.addEventListener("input", () => {
+  if ("vibrate" in navigator) {
+    navigator.vibrate(50);
+  }
+});
