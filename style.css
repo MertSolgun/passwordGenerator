@@ -196,6 +196,9 @@ input[type="checkbox"] {
     font-size: 0.9rem;
     padding-top: 10px;
   }
+  .levelInput ul {
+    gap: 5px;
+  }
 }
 
 input[type="checkbox"] {
